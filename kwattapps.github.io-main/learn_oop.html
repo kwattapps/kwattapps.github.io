@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kilowatt | Engineering & Design</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/learn.css">
+
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="Kilowatt_favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Kilowatt_favicon-16x16.png">
+    
+
+    <!-- Material Symbols
+    ================================================== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Material Symbols Styling
+    ================================================== -->
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 600,
+          'GRAD' 0,
+          'opsz' 49;
+          
+          color:
+          #F26522;
+        }
+    </style>
+
+    <!-- Bootstrap & Coding Mods
+    ================================================== -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.22.0/min/vs/loader.js"></script>
+    <script src="./js/kwBlocks.js"></script>
+    <script>
+        require.config({ paths: { 'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.22.0/min/vs' }});
+        require(['vs/editor/editor.main'], function() {
+        /*Python =====================*/
+        createEditor("kwBlock1");
+        createEditor2("kwBlock2");
+        createEditor3("kwBlock3");
+        createEditor4("kwBlock4");
+        createEditor5("kwBlock5");
+        createEditor6("kwBlock6");
+        createEditor7("kwBlock7");
+        createOutput1("kwOutput1");
+        /*C++ =====================*/
+        createEditor8("kwBlock8");
+        createEditor9("kwBlock9");
+        createEditor10("kwBlock10");
+        createEditor11("kwBlock11");
+        createEditor12("kwBlock12");
+        createEditor13("kwBlock13");
+        createOutput2("kwOutput2");
+        /*Applying OOP ========================*/
+        createEditor14("kwBlock14");
+        createEditor15("kwBlock15");
+        createEditor16("kwBlock16");
+        createEditor17("kwBlock17");
+        createEditor18("kwBlock18");
+        createEditor19("kwBlock19");
+        createEditor20("kwBlock20");
+        });
+    </script>
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li style="display: none;"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li class="current"><a href="#about" class="smoothscroll">What is OOP?</a></li>
+                        <li><a href="#section1" class="smoothscroll">OOP Example (Python)</a></li>
+                        <li><a href="#section2" class="smoothscroll">OOP Example (C++)</a></li>
+                        <li><a href="#section3" class="smoothscroll">Applying OOP Principles</a></li>
+                        <li><a href="#footer" class="smoothscroll">Connect</a></li>
+                    </ul> <!-- s-header__menu-links -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro target-section">
+                
+            </section> <!-- end s-intro -->
+
+
+            <!-- What is OOP
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="01">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">What is OOP?</h3>
+                    
+                    <h2 class="title text-display-1">
+                    OOP stands for Object-Oriented Programming. It is a set of rules that allows you to create objects. It saves you time by helping you write less redundant code using a <span class="interest">class</span>. 
+                    Objects can be people, animals, cars, etc...
+                    </h2>
+                    <p class="desc">
+                    A class is a user defined data type that serves as a template. Think of it as a specially-shaped cookie cutter.
+                    When creating a class, it is standard to type the <span class="interest">class name</span> in <span>CamelCase</span>.
+                    Before we dive into coding, let's first talk about the four important principles of OOP.
+                    </p>
+                    
+                </div> <!-- end section-header -->
+
+                <div class="row process-list list-block show-ctr block-lg-one-half block-tab-whole">
+
+                    <div class="learn_list">
+                        <h5 class="h5">Inheritance</h5>
+                        <p>
+                        Inheritance is when a child class derives from a parent class and has access to all the parent members.
+                        </p>
+                    </div>
+
+                    <div class="learn_list">
+                        <h5 class="h5">Abstraction</h5>
+                        <p>
+                        Abstraction is when you hide complex logic behind methods that makes it look simple - 
+                        like an <span class="interest">interface</span> in Java and C# programming languages.
+                        </p>
+                    </div>
+
+                    <div class="learn_list">
+                        <h5 class="h5">Encapsulation</h5>
+                        <p>
+                        Encapsulation is the idea of making a method or member private, 
+                        preventing anyone and anything from modifying the data directly.
+                        </p>
+                    </div>
+
+                    <div class="learn_list">
+                        <h5 class="h5">Polymorphism</h5>
+                        <p>
+                        Polymorphism is a term derived from the greek language. 
+                        It means something that takes on multiple forms. 
+                        In the programming realm, it describes the ability of an object or a method to have many forms.
+                        </p>
+                    </div>
+
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- OOP Example (Python)
+            ----------------------------------------------- -->
+            <section id="section1" class="s-section1 target-section">
+
+                <div class="row section-header" data-num="02">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">OOP in Python</h3>
+                    <div class="block__">
+                        <p>
+                        In this walkthrough, I will assume you already have standard knowledge of the Python programming language. 
+                        When creating and naming a class, remember that the class name needs to be in <span class="interest">CamelCase</span>:
+                        </p>
+                        <div id="kwBlock1" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Next we are going to build a constructor for our class. A constructor is a special type method that is invoked when an object of a class is created. 
+                        In Python, the constructor needs to be built first before we can create members and methods, versus C++ where we first have to establish <span class="interest">Access Modifiers</span>. 
+                        We will tackle Python's constructor and class building process first.
+                        </p>
+                        <div id="kwBlock2" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        <span class="interest">__init__</span> is a special method known as a constructor. It is used to initialize the members/attributes within our class. 
+                        This is a required step in order to properly create objects with the class later on in the scope. 
+                        Next, let's give our class an attribute/member, <span class="interest">color</span>. In python, its best practice to create your members in <span class="interest">lowercase</span>.
+                        </p>
+                        <div id="kwBlock3" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Next we are going to use the keyword <span class="interest">self</span> to point to the color attribute. 
+                        Self simply means <span class="interest">this</span> instance. Below we are saying, this instance of color = the color the user inputs, because each time an object is created, it will have its own instance. 
+                        We will see this in action once we create objects with our class.
+                        </p>
+                        <div id="kwBlock4" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Now that we have constructed our class in Python, we can give it methods. 
+                        Methods are functions within the scope of a class. 
+                        These methods can be used to give functionality to attributes/members within the class. 
+                        Below, we will create a method called Flavor that prints a flavor based on the color the user inputs. 
+                        Methods within a class typically take in the self keyword as well.
+                        </p>
+                        <div id="kwBlock5" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Now that we have a fully constructed class with a method, let's build our objects. 
+                        We will name them <span class="interest">customer_one</span> and <span class="interest">customer_two</span> 
+                        and then we are going to initialize our class and take in an input from each customer.
+                        </p>
+                        <div id="kwBlock6" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        <span class="interest">customer_one</span> requested a yellow-colored cookie, and <span class="interest">customer_two</span> requested a gold-colored cookie. 
+                        If we look at our method, we only have three colors: brown, red, and yellow. 
+                        Any color outside of our inventory we simply do not have. Now, let's validate our colors to the customers by calling our <span class="interest">flavor()</span> method, 
+                        which we can now do in the public scope because we have initialized our class when building our objects.
+                        </p>
+                        <div id="kwBlock7" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        We can now run our code. We were able to process both <span class="interest">customer_one</span> and <span class="interest">customer_two</span> requests and responded 
+                        based on our <span class="interest">Flavor()</span> method. <span class="interest">customer_one</span> requested a butter cookie and <span class="interest">customer_two</span> requested a cookie we do not have. 
+                        Notice how both objects(customers) were able to request their own cookie and get two separate responses. 
+                        This (no pun intended) is all thanks to the <span class="interest">self</span> keyword, as self = this instance, and each object had their own instance.
+                        </p>
+                        <div id="kwOutput1" class="kwb"></div>
+                    </div>
+                    
+                    
+                </div> <!-- end section-header -->
+
+            </section> <!-- end s-services -->
+
+            <!-- OOP Example (C++)
+            ----------------------------------------------- -->
+            <section id="section2" class="s-section2 target-section">
+
+                <div class="row section-header" data-num="03">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">OOP in C++</h3>
+                    <div class="block__">
+                        <p>
+                        In C++, building a class is a bit different from Python. In this walkthrough, 
+                        I will assume you already have standard knowledge of the C++ programming language. 
+                        When creating and naming a class, remember that the class name needs to be CamelCase, 
+                        this is standard across most programming languages:
+                        </p>
+                        <div id="kwBlock8" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Next, let's create our <span class="interest">Access modifiers</span>. Unlike in Python, to access our attributes/members, we need to establish access modifiers. 
+                        In the rest of this walkthrough, I will be abbreviating access modifier as <span class="interest">aM</span> - this isn't standard. There are currently three aMs: <span class="interest">private</span>, <span class="interest">public</span>, and <span class="interest">protected</span>.
+                        <br>
+                        <br>
+                        <span class="interest">private</span> means that all attributes within your class will not be accessible, which is the default, even if we do not establish members within the <span class="interest">private</span> scope.
+                        <br>
+                        <br>
+                        <span class="interest">public</span> means that all attributes within your class will be accessible outside of your class.
+                        <br>
+                        <br>
+                        <span class="interest">protected</span> deals more with <span class="interest">inheritance</span>. If we set members within the <span class="interest">protected</span> scope, only the classes that derive from the parent class can access the protected members.
+                        
+                        Let's create our members/attributes. We will create <span class="interest">Color</span>.
+                        </p>
+                        <div id="kwBlock9" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Unlike in Python, it is conventional that our members'/attributes' names start with a capitalized character. 
+                        Next, we are going to build our constructor. In C++ there are two types of constructors, 
+                        one that the developer builds and the other that the compiler generates on default. 
+                        If we do not build a constructor, the compiler will construct our objects with empty or random values. Also, the constructor MUST have the same exact name as the class.
+                        </p>
+                        <div id="kwBlock10" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        In C++, to allow the constructor to create objects from the class, we would first need to give the constructor parameters. 
+                        The parameters aren't the members of the class, but instead are instances of the members. 
+                        Above, we have <span class="interest">color</span> and <span class="interest">Color</span>. The <span class="interest">Color</span> is the member of this class and the <span class="interest">color</span> is an instance of the <span class="interest">Color</span> member. In Python, we simply use self to differentiate the attribute/member from the instance.
+                        Now that we have our constructor setup with our member, let's create a method called <span class="interest">Flavor()</span>. 
+                        This method, like in the Python method, will validate if the customer is requesting a flavor we have in our factory by asking for a <span class="interest">color</span>.
+                        </p>
+                        <div id="kwBlock11" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        Now that we finally have our constructor, members, and method, 
+                        we can begin creating objects within our main scope. 
+                        We will create two customer objects that will request cookies based on color.
+                        </p>
+                        <div id="kwBlock12" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        With the example above, we created our objects. Beforehand, we had to specify a <span class="interest">type</span>. 
+                        Just like with everything in C++, a <span class="interest">type</span> is required when creating objects and variables. 
+                        Our <span class="interest">type</span> in this case would be our class name for our objects. Next, we initialized the constructor by referencing it with our objects(customers). 
+                        In this case, <span class="interest">customer_one</span> requested a red cookie and <span class="interest">customer_two</span> requested a white cookie.
+                        We will now validate the colors with our <span class="interest">Flavor()</span> method within our main scope and see if we have the cookies the customers are requesting.                       
+                        </p>
+                        <div id="kwBlock13" class="kwb"></div>
+                    </div>
+
+                    <div class="block__">
+                        <p>
+                        We were able to process the requests and saw that <span class="interest">customer_one</span> 
+                        requested a strawberry cookie and <span class="interest">customer_two</span> requested a cookie we did not have.
+                        </p>
+                        <div id="kwOutput2" class="kwb"></div>
+                    </div>
+
+                    
+                    
+                </div> <!-- end section-header -->
+
+            </section> <!-- end s-services -->
+
+            <!-- Applying OOP Principles
+            ----------------------------------------------- -->
+            <section id="section3" class="s-section2 target-section">
+
+                <div class="row section-header" data-num="04">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">Applying OOP Principles</h3>
+                    <div class="block__">
+                        <p>
+                        In this section, we are going to use Object-Oriented Programming Principles within our CookieFactory class. 
+                        I will demonstrate the principle first and then explain in both Python and C++.
+                        </p>
+                        <h3 class="oopLabel">Inheritance</h3>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock14" class="kwb"></div>
+                        <p>
+                        <br>
+                        In Python, Inheritance can be used to grant access to Parent class members and methods, so that Child classes can utilize them.
+                        <br>
+                        <br>
+                        Let's create a Child class called Cashier and see the cookie ordering magic up close.
+                        <br>
+                        <br>
+                        Step 1: We created a Child class called <span class="interest">Cashier</span>. We are calling this a Child class(Cashier) because it is deriving from the CookieFactory class - Cashier(CookieFactory). 
+                        <br>
+                        <br>
+                        Step 2: We gave our Child class a member called <span class="interest">cashier</span>. Since our Child class derives from the Parent class, we must add the Parent member(s) first and then our Child members. 
+                        <br>
+                        <br>
+                        Step 3: We utilized a function called <span class="interest">super().__init__</span>. This function allows us to access members and methods from our Parent class (CookieFactory). Within the super init function, we have to insert the member(s) from our Parent class. 
+                        <br>
+                        <br>
+                        Step 4: We gave our cashier member an instance. 
+                        <br>
+                        <br>
+                        Step 5: We created a member called Process(), which immitates a conversation between both the cashiers and the customers. 
+                        <br>
+                        <br>
+                        Step 6: We initialized our Child class constructor by creating an object(cashier) passing through a value for the Parent member(s) first, then the Child member(s). 
+                        <br>
+                        <br>
+                        Step 7: Lastly, we called the <span class="interest">Process()</span> method using our cashier objects. 
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock15" class="kwb"></div>
+                        <p>
+                            <br>
+                        In C++, just like in Python, Inheritance can be used to grant access to Parent class members, so that Child classes can utilize them. 
+                        Let's create a Child class called Cashier and see the cookie ordering magic up close.
+                        <br>
+                        <br>
+                        Step 1: We created a Child class called <span class="interest">Cashier</span>. We are calling this a Child class(Cashier) because it derives from the CookieFactory class - Cashier(CookieFactory). 
+                        <br>
+                        <br>
+                        Step 2: We gave our Child class a member called <span class="interest">Cashier_</span>. Since our Child class derives from the Parent class, we must add the Parent member(s) first and then our Child members. 
+                        <br>
+                        <br>
+                        Step 3: We attached our Parent constructor to our Child constructor. This allows us to access members and methods from our Parent class (CookieFactory). 
+                        <br>
+                        <br>
+                        Step 4: We gave our <span class="intererst">Cashier_</span> member an instance. 
+                        <br>
+                        <br>
+                        Step 5: We created a member called Process(), which immitates a conversation between both the cashiers and the customers. 
+                        <br>
+                        <br>
+                        Step 6: We initialized our Child class constructor by creating an object(cashier) passing through a value for the Parent member(s) first, then the Child member(s). 
+                        <br>
+                        <br>
+                        Step 7: Lastly, we called the <span class="interest">Process()</span> method using our cashier objects. 
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <h3 class="oopLabel">Abstraction</h3>
+                        <p>
+                        Abstraction in Python isn't supported directly. Using special methods or calling a <span class="interest">Magic</span> method allows 
+                        for some form of Abstraction. C++ on the other hand, does support Abstraction directly.
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock16" class="kwb"></div>
+                        <p>
+                        <br>
+                        In C++, Abstraction can be easily implemented by using the <span class="interest">virtual</span> keyword on the abstract class's method and can be called within another class without <span class="interest">inheritance</span>. Let's create a class that rates our cookies from Yum! to Best Seller (very biased, I know).
+                        <br>
+                        <br>
+                        Step 1: We created a class called <span class="interest">BestSelling</span> that will serve as our abstract class and gave it a method called FanFave(). The (= 0) is known as a <span class="interest">pure specifier</span>, which is used to declare a virtual function. We use it because you must declare at least one member when creating an abstract class. 
+                        <br>
+                        <br>
+                        Step 2: We will attach it to our CookieFactory class. Note, we will not have to create a constructor that references our abstract class, because it's interface level. We are simply using our CookieFactory class as a backend for our abstract class. 
+                        <br>
+                        <br>
+                        Step 3: We recreated a FanFave() method and gave it a virtual keyword so that we can redefine it in our CookieFactory class. 
+                        <br>
+                        <br>
+                        Step 4: We used our objects to call the <span class="interest">FanFave()</span> method.
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <h3 class="oopLabel">Encapsulation</h3>
+                        <p>
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock17" class="kwb"></div>
+                        <p>
+                        <br>
+                        In Python, we can make a member/attribute private by using a double underscore. We can use this for encapsulation.
+                        <br>
+                        <br>
+                        Step1: We encapsulated our color member by adding two underscores between <span class="interest">self.</span> and the member. 
+                        <br>
+                        <br>
+                        Step 2: We created our setter and getter methods within our class. Notice the setter takes in a parameter(<span class="interest">self.color</span>). This is because the setter method will be used to set the color, while the getter method will return the color that was set. Also, notice we brought over encapsulated member to the setter and getter methods. 
+                        <br>
+                        <br>
+                        Step 3: We can now set our color within global scope. We set it to "brown" using our set_color method. 
+                        <br>
+                        <br>
+                        Step 4: We used our get_color() method to retrieve the Color.
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock18" class="kwb"></div>
+                        <p>
+                        <br>
+                        In C++, we can use the <span class="interest">private</span> aM (access modifier), to encapsulate a member. We can access that member by creating <span class="interest">setter</span> and <span class="interest">getter</span> methods within our class. Let's set and get our cookie's <span class="interest">Color</span>.
+                        <br>
+                        <br>
+                        Step1: We have encapsulated our Color member within our private aM. 
+                        <br>
+                        <br>
+                        Step 2: We created our setter and getter methods within our class. Notice the setter takes in a parameter(<span class="interest">Color</span>). This is because the setter method will be used to set the Color, while the getter method will return the Color that was set. Also, notice that our get_color method has a <span class="interest">type</span> string, because we are returning a string. 
+                        <br>
+                        <br>
+                        Step 3: We can now set our Color within the main scope. We set it to "brown" using our set_color method. 
+                        <br>
+                        <br>
+                        Step 4: We used our get_color() method to retrieve the Color.
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <h3 class="oopLabel">Polymorphism</h3>
+                        <p>
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock19" class="kwb"></div>
+                        <p>
+                        <br>
+                        In Python, Polymorphism happens automatically. 
+                        Let's say our customers wanted more than one cookie and we offered them a membership to our cookie factory. 
+                        Let's set up our membership system:
+                        <br>
+                        <br>
+                        Step 1: We created a Child class called <span class="interest">CFMembership</span> that derives from <span class="interest">CookieFactory</span>. 
+                        <br>
+                        <br>
+                        Step 2: Next, we created the same <span class="interest">Flavor()</span> method within our Child class and redefined it to allow the members to specify an <span class="interest">amount</span>. 
+                        <br>
+                        <br>
+                        Step 3: Lastly, we created our member(object) and pointed our customer to it. When we run this, <span class="interest">customer_one</span> <span class="interest">Flavor()</span> method will point to <span class="interest">member_one</span> <span class="interest">Flavor()</span> method.
+                        </p>
+                    </div>
+
+                    <div class="block__">
+                        <div id="kwBlock20" class="kwb"></div>
+                        <p>
+                        <br>
+                        In C++, implementing <span class="interest">polymorphism</span> takes a few steps. Let's say our customers wanted more than one cookie and we offered them a membership to our cookie factory. Let's set up our membership system:
+                        <br>
+                        <br>
+                        Step 1: First, we needed to set the virtual keyword on our Parent class (<span class="interest">CookieFactory</span>)  method called <span class="interest">Flavor()</span>. This allows us to redefine our <span class="interest">Flavor()</span> method within our Child class(<span class="interest">CFMembership</span>). 
+                        <br>
+                        <br>
+                        Step 2: Next, on our CFMembership class, we needed to set the Parent class to public (<span class="interest">CFMembership: public CookieFactory{};</span>). This allowed us to access the members using a pointer (*) and a reference (&). 
+                        <br>
+                        <br>
+                        Step 3: We redefined the <span class="interest">Flavor()</span> method within the Child class, which will allow our members(objects) to specify an <span class="interest">amount</span>. 
+                        <br>
+                        <br>
+                        Step 4: Lastly, we pointed our customers(objects) to our members(objects). Remember, we wanted to redefine our <span class="interest">Flavor()</span> method so that customers can become members and order more than one cookie at a time.
+                        </p>
+                    </div>
+
+                </div> <!-- end section-header -->
+
+            </section> <!-- end s-services -->
+
+            
+
+        <!-- # site-footer
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row section-header" data-num="">
+                <h3 class="column lg-12 section-header__pretitle text-pretitle">Get In Touch</h3>
+                <div class="column lg-6 stack-on-1100 section-header__primary">
+                    <h2 class="title text-display-1">
+                    Have an idea for a project in mind? Let's connect.
+                    </h2>
+                </div>    
+                <div class="column lg-6 stack-on-1100 section-header__secondary">
+                    <div class="hb-p-62ed5bab57654e0009e5c7ea-1"></div><img height="1" width="1" style="display:none" src="https://www.honeybook.com/p.png?pid=62ed5bab57654e0009e5c7ea">
+                        <script>
+                          (function(h,b,s,n,i,p,e,t) {
+                            h._HB_ = h._HB_ || {};h._HB_.pid = i;;;;
+                            t=b.createElement(s);t.type="text/javascript";t.async=!0;t.src=n;
+                            e=b.getElementsByTagName(s)[0];e.parentNode.insertBefore(t,e);
+                        })(window,document,"script","https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js","62ed5bab57654e0009e5c7ea");
+                        </script>
+                </div>
+            </div> <!-- end section-header -->
+            <!--
+            <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
+                <div class="column list-block__item">
+                    <div class="s-footer__contact-btn">
+                        <a href="mailto:#0" class="btn btn--primary u-fullwidth">
+                            Let's Talk 
+                        </a>
+                    </div>
+                </div>
+                <div class="column list-block__item">
+                    <div class="subscribe-form s-footer__subscribe">
+                        <h6>Subscribe</h6>
+                        <form id="mc-form" class="mc-form">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                            <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary u-fullwidth">
+
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            -->
+            <div class="row s-footer__bottom">
+                <!--
+                <div class="column lg-6 tab-12 s-footer__bottom-left">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                                <span class="u-screen-reader-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:-ms-filter;"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M20.66 6.98a9.932 9.932 0 0 0-3.641-3.64C15.486 2.447 13.813 2 12 2s-3.486.447-5.02 1.34c-1.533.893-2.747 2.107-3.64 3.64S2 10.187 2 12s.446 3.487 1.34 5.02a9.924 9.924 0 0 0 3.641 3.64C8.514 21.553 10.187 22 12 22s3.486-.447 5.02-1.34a9.932 9.932 0 0 0 3.641-3.64C21.554 15.487 22 13.813 22 12s-.446-3.487-1.34-5.02zM12 3.66c2 0 3.772.64 5.32 1.919-.92 1.174-2.286 2.14-4.1 2.9-1.002-1.813-2.088-3.327-3.261-4.54A7.715 7.715 0 0 1 12 3.66zM5.51 6.8a8.116 8.116 0 0 1 2.711-2.22c1.212 1.201 2.325 2.7 3.34 4.5-2 .6-4.114.9-6.341.9-.573 0-1.006-.013-1.3-.04A8.549 8.549 0 0 1 5.51 6.8zM3.66 12c0-.054.003-.12.01-.2.007-.08.01-.146.01-.2.254.014.641.02 1.161.02 2.666 0 5.146-.367 7.439-1.1.187.373.381.793.58 1.26-1.32.293-2.674 1.006-4.061 2.14S6.4 16.247 5.76 17.5c-1.4-1.587-2.1-3.42-2.1-5.5zM12 20.34c-1.894 0-3.594-.587-5.101-1.759.601-1.187 1.524-2.322 2.771-3.401 1.246-1.08 2.483-1.753 3.71-2.02a29.441 29.441 0 0 1 1.56 6.62 8.166 8.166 0 0 1-2.94.56zm7.08-3.96a8.351 8.351 0 0 1-2.58 2.621c-.24-2.08-.7-4.107-1.379-6.081.932-.066 1.765-.1 2.5-.1.799 0 1.686.034 2.659.1a8.098 8.098 0 0 1-1.2 3.46zm-1.24-5c-1.16 0-2.233.047-3.22.14a27.053 27.053 0 0 0-.68-1.62c2.066-.906 3.532-2.006 4.399-3.3 1.2 1.414 1.854 3.027 1.96 4.84-.812-.04-1.632-.06-2.459-.06z"></path></svg>
+                                <span class="u-screen-reader-text">Dribbble</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            -->
+                <div class="column lg-6 tab-12 s-footer__bottom-right">
+                    <div class="ss-copyright">
+                        <span>Copyright © 2023 Kilowatt Engineering and Design, Inc</span> 
+                    </div>
+                </div>
+
+            </div> <!-- s-footer__bottom -->
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+    
+        </footer> <!-- end footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
